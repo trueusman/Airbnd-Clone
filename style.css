@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.logo:hover {
+
+   color: var(--primary-color);
+  transform: scale(1.05);
+
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+}
+
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  height: 80px;
+
+  background-color: #badae4
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-logo img:hover {
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
+
+
+}
+
+.nav-logo:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+}
+
+.tabs a:hover {
+
+  color: red
+}
+
+.nav-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-btn button {
+  width: 100px;
+  background: transparent;
+  border: none;
+}
+
+.nav-btn button:hover {
+  box-shadow: 0 0 15px #00f7ff, 0 0 25px #00f7ff;
+  border-radius: 25px;
+}
+
+svg {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+svg:hover {
+
+  box-shadow: 0 0 15px #00f7ff, 0 0 25px #00f7ff;
+}
+
+/* Search bar */
+
+.search-bar {
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  box-shadow: var(--shadow);
+  width: fit-content;
+  padding: 10px 20px;
+  gap: 30px;
+  transition: var(--transition);
+  border-radius: 30px;
+  background-color: #badae4;
+}
+
+.search-bar:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+.search-icon-color:hover {
+
+  color: var(--primary-color);
+  transform: scale(1.05);
+}
+
+/* <!--Home Cards--> */
+
+
+h2 {
+
+  text-align: center;
+}
+
+
+h2 {
+  padding: 20px;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.home-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform var(--transition), box-shadow var(--transition);
+  font-weight: bold;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  color: #333;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.card-info {
+  padding: 12px 15px 18px;
+}
+
+.card-info h4 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.card-info p {
+  color: var(--muted-text);
+  font-size: 14px;
+}
+
+.fa-star {
+  color: gold;
+}
+
+/* <!-Footer-> */
+
+footer {
+  background-color: var(--bg-color);
+  padding: var(--footer-padding);
+  border-top: 1px solid #ddd;
+  background-color: #badae4;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin: 40px;
+  background-color: #badae4;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  margin: 10px 20px;
+
+}
+
+.footer-column h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  /* margin: 40px; */
+  padding: 20px;
+  background-color: #badae4
+}
+
+.footer-bottom a {
+  color: var(--link-color);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-settings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.underline-hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.underline-hover:hover::after {
+  width: 100%;
+}
+
